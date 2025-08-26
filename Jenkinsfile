@@ -35,7 +35,7 @@ pipeline {
       steps {
         sh '''
           set -eux
-          docker build -t jenkins-demo-app:latest .
+          docker build --platform=linux/amd64 -t jenkins-demo-app:latest .
         '''
       }
     }

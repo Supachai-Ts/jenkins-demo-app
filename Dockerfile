@@ -1,4 +1,4 @@
-FROM python:3.9-slim
+FROM --platform=linux/amd64 python:3.9-slim
 WORKDIR /app
 COPY requirements.txt .
 RUN python -m pip install --upgrade pip \
